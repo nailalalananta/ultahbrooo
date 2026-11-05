@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="stars" id="stars"></div>
+
+    <audio id="bgMusic" loop>
+        <source src="musik/lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MUSIC BUTTON -->
+    <button class="music-btn" id="musicBtn">♫</button>
+
+    <!-- OPENING -->
+    <section class="opening" id="opening">
+
+        <div class="moon">☾</div>
+
+        <div class="opening-card">
+
+            <span class="small-text">A SPECIAL DAY FOR U</span>
+
+            <h1>Happy Birthday</h1>
+
+            <p>Today is all about you. ♡</p>
+
+            <div class="cake-icon">🎂</div>
+
+            <button class="main-btn" id="openBtn">
+                Open Your Surprise ✨
+            </button>
+
+            <span class="bottom-text">made with love ♡</span>
+
+        </div>
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <main id="mainContent" class="hidden">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <span class="tag">✦ TODAY IS YOUR DAY ✦</span>
+
+            <h1>Happy Birthday,<br>
+                <span>My Broo.</span>
+            </h1>
+
+            <p>
+                Another year, another chapter,
+                and another reason to celebrate you.
+            </p>
+
+            <div class="hero-decoration">୨୧</div>
+
+            <button class="scroll-btn" onclick="scrollToSection('gallery')">
+                Explore Your Day ↓
+            </button>
+
+        </section>
+
+
+        <!-- COUNTDOWN MESSAGE -->
+        <section class="message section" id="message">
+
+            <div class="section-heading">
+                <span>01 — A LITTLE MESSAGE</span>
+                <h2>A day made for you ♡</h2>
+            </div>
+
+            <div class="message-card">
+
+                <div class="card-icon">🦋</div>
+
+                <h3>Dear You,</h3>
+
+                <p>
+                    Happy birthday to you!
+                    Semoga di umur yang baru ini,
+                    mas selalu diberikan kebahagiaan,
+                    kesehatan, dan banyak hal baik.
+
+                    semoga selalu bisa menjadi kebanggaan
+                    semua orang.
+                    I hope your days are always filled
+                    with beautiful things.
+                </p>
+
+                <span class="signature">With love, ♡</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery section" id="gallery">
+
+            <div class="section-heading">
+                <span>02 — LITTLE MEMORIES</span>
+                <h2>Captured Moments.</h2>
+                <p>Some memories deserve to stay forever.</p>
+            </div>
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="photo/aa.jpeg" alt="Memory 1">
+                    <span>♡ A little memory</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photo/bb.jpeg" alt="Memory 2">
+                    <span>♡ Beautiful day</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photo/cc.jpeg" alt="Memory 3">
+                    <span>♡ Best moments</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="photo/dd.jpeg" alt="Memory 4">
+                    <span>♡ Forever memories</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SURPRISE -->
+        <section class="surprise section">
+
+            <div class="section-heading">
+                <span>03 — A LITTLE SURPRISE</span>
+                <h2>Something for you 🎁</h2>
+            </div>
+
+            <div class="gift-area">
+
+                <div class="gift-box" id="giftBox">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body">🎁</div>
+                </div>
+
+                <p>Click the gift to reveal your surprise!</p>
+
+                <div class="gift-message hidden" id="giftMessage">
+                    <h3>Surprise! ♡</h3>
+                    <p>
+                        You deserve all the happiness
+                        this world has to offer.
+                        Never stop being you! 💙
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LETTER -->
+        <section class="letter section">
+
+            <div class="section-heading">
+                <span>04 — OPEN WHENEVER</span>
+                <h2>A letter for you.</h2>
+            </div>
+
+            <div class="letter-card">
+
+                <div class="envelope">💌</div>
+
+                <h3>One Last Thing...</h3>
+
+                <p>
+                    There's something I want you to read.
+                </p>
+
+                <button class="main-btn" id="letterBtn">
+                    Open My Letter ♡
+                </button>
+
+                <div class="letter-content hidden" id="letterContent">
+
+                    <p>
+                        Happy birthday broo!!!
+
+                        semoga bertambahnya usia membawa lebih banyak kebahagiaan, kedewasaan,
+                        dan hal hal baik dalam hidup. semoga selalu diberikan kesehatan, kelancaran rezeki,
+                        serta kekuatan dalam setiap proses yang sedang dijalani.
+
+                        apapun yang diperjuangkan, 
+                        semoga berakhir dengan sesuatu yang indah.
+
+                        Don't forget that you are special,
+                        you are appreciated, and you deserve
+                        every beautiful thing coming your way.
+
+                        Keep shining, keep growing,
+                        and enjoy every little moment.
+
+                        Once again, happy birthday! 💙
+                    </p>
+
+                    <span>Always wishing you the best ♡</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="footer-star">✦</div>
+
+            <h2>Make a Wish.</h2>
+
+            <p>semoga babak baru kehidupan ini, membawa segala hal
+                yang selama ini kamu harapkan.</p>
+
+            <span>Made with ♡ just for you</span>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
